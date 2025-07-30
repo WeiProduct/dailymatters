@@ -288,6 +288,26 @@ body {
     opacity: 0.8;
 }
 
+.qr-download {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.qr-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.qr-code {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
 /* Support Section */
 .support {
     padding: 3rem 0;
