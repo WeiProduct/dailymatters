@@ -207,6 +207,7 @@ body {
     overflow-x: auto;
     padding: 1rem 0 2rem;
     -webkit-overflow-scrolling: touch;
+    align-items: flex-start;
 }
 
 .screenshot {
@@ -216,8 +217,8 @@ body {
 
 .screenshot img {
     width: 100%;
-    aspect-ratio: 1290 / 2796;
-    object-fit: cover;
+    height: auto;
+    display: block;
     border-radius: 16px;
     box-shadow: 0 10px 30px var(--shadow);
 }
