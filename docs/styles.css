@@ -144,7 +144,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .cd-foot { margin-top: 14px; text-align: center; font-size: 11px; font-weight: 600; color: var(--primary-color); background: var(--chip-bg); padding: 9px; border-radius: 12px; }
 .hero-chip { position: absolute; display: flex; align-items: center; gap: 6px; background: var(--card); border: 1px solid var(--border-color); box-shadow: var(--shadow-lg); border-radius: 14px; padding: 10px 14px; font-size: 13px; font-weight: 700; }
 .hero-chip .chip-cd-num { font-variant-numeric: tabular-nums; color: var(--primary-color); }
-.chip-a { top: 12%; left: -8%; animation: float 5s ease-in-out infinite; }
+.chip-a { top: 16%; left: -20%; animation: float 5s ease-in-out infinite; }
 .chip-b { bottom: 13%; right: -5%; animation: float 5s ease-in-out infinite .8s; }
 
 @keyframes cdIn { from { opacity: 0; transform: translateX(16px) scale(.97); } to { opacity: 1; transform: none; } }
