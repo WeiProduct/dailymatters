@@ -1,217 +1,337 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dailymatters - 智能日程管理，让每一天都充满意义</title>
-    <meta name="description" content="Dailymatters 是一款智能化的日程管理应用，配备AI助手，帮你高效管理时间，不错过任何重要时刻。">
-    <meta name="keywords" content="日程管理,倒计时,提醒,AI助手,时间管理,iOS应用">
+    <meta name="theme-color" content="#007AFF" id="themeColorMeta">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#007AFF">
-    <link rel="canonical" href="https://weiproduct.github.io/dailymatters/">
+    <title>Dailymatters - 智能日程与倒计时管理 | Countdown, Reminders & AI</title>
+    <meta name="description" content="Dailymatters 是一款配备 AI 助手的 iOS 日程管理应用，记录事件、生日与截止日，用倒计时和灵活提醒陪你珍藏每个重要时刻。数据全本地存储。">
+    <meta name="keywords" content="日程管理,倒计时,提醒,AI助手,生日提醒,时间管理,iOS应用,Dailymatters">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="WeiProduct">
-    <meta property="og:title" content="Dailymatters - 智能日程管理">
-    <meta property="og:description" content="An AI-assisted schedule, countdown, reminder, and widget app for iPhone.">
+    <meta property="og:title" content="Dailymatters - 智能日程与倒计时管理">
+    <meta property="og:description" content="AI-assisted schedule, countdown, reminder, and widget app for iPhone. Make every day count.">
     <meta property="og:url" content="https://weiproduct.github.io/dailymatters/">
     <meta property="og:image" content="https://weiproduct.github.io/dailymatters/images/hero-mockup.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Dailymatters">
+    <meta name="twitter:title" content="Dailymatters | Countdown & Reminders">
     <meta name="twitter:description" content="AI-assisted schedule management for important days, reminders, and routines.">
     <meta name="twitter:image" content="https://weiproduct.github.io/dailymatters/images/hero-mockup.png">
+    <link rel="canonical" href="https://weiproduct.github.io/dailymatters/">
+    <link rel="alternate" hreflang="zh-CN" href="https://weiproduct.github.io/dailymatters/">
+    <link rel="alternate" hreflang="en" href="https://weiproduct.github.io/dailymatters/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23007AFF'/%3E%3Cstop offset='1' stop-color='%235856D6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Crect x='24' y='28' width='52' height='48' rx='10' fill='none' stroke='white' stroke-width='5'/%3E%3Cpath d='M24 43 H76 M38 21 V33 M62 21 V33' stroke='white' stroke-width='5' stroke-linecap='round'/%3E%3Crect x='43' y='52' width='14' height='14' rx='4' fill='white'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23007AFF'/%3E%3Cstop offset='1' stop-color='%235856D6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Crect x='24' y='28' width='52' height='48' rx='10' fill='none' stroke='white' stroke-width='5'/%3E%3Cpath d='M24 43 H76 M38 21 V33 M62 21 V33' stroke='white' stroke-width='5' stroke-linecap='round'/%3E%3Crect x='43' y='52' width='14' height='14' rx='4' fill='white'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Dailymatters",
-        "alternateName": "Daily Matters",
-        "applicationCategory": "ProductivityApplication",
-        "operatingSystem": "iOS",
-        "description": "An AI-assisted schedule management app for reminders, countdowns, recurring events, widgets, and private local planning.",
-        "url": "https://weiproduct.github.io/dailymatters/",
-        "downloadUrl": "https://apps.apple.com/app/id6749191628",
-        "image": "https://weiproduct.github.io/dailymatters/images/hero-mockup.png",
-        "creator": {
-            "@type": "Organization",
-            "name": "WeiProduct",
-            "url": "https://weiproduct.com/"
-        },
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        }
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Dailymatters",
+      "alternateName": "Daily Matters",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "iOS 17.0+",
+      "url": "https://weiproduct.github.io/dailymatters/",
+      "image": "https://weiproduct.github.io/dailymatters/images/hero-mockup.png",
+      "downloadUrl": "https://apps.apple.com/app/id6749191628",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "publisher": { "@type": "Organization", "name": "WeiProduct", "url": "https://weiproduct.com/" },
+      "description": "An AI-assisted schedule management app for reminders, countdowns, recurring events, widgets, and private local planning."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Dailymatters 是免费的吗？", "acceptedAnswer": { "@type": "Answer", "text": "是的，Dailymatters 可在 App Store 免费下载使用。" } },
+        { "@type": "Question", "name": "可以设置重复事件吗？", "acceptedAnswer": { "@type": "Answer", "text": "可以。支持每日、每周、每月、每年等多种重复模式，非常适合生日、账单和日常打卡。" } },
+        { "@type": "Question", "name": "支持哪些提醒方式？", "acceptedAnswer": { "@type": "Answer", "text": "每个事件都可添加多个自定义提醒，支持当天提醒和提前提醒，确保重要时刻不错过。" } },
+        { "@type": "Question", "name": "我的数据安全吗？", "acceptedAnswer": { "@type": "Answer", "text": "所有事件数据都保存在设备本地，无需账号。使用 AI 助手时需要你自行配置 API 密钥，对话通过加密连接发送，我们不会存储你的密钥或对话记录。" } },
+        { "@type": "Question", "name": "有桌面小组件吗？", "acceptedAnswer": { "@type": "Answer", "text": "有。你可以把 Dailymatters 小组件添加到主屏幕，随时查看今日安排与重要倒计时。" } },
+        { "@type": "Question", "name": "支持哪些语言和系统版本？", "acceptedAnswer": { "@type": "Answer", "text": "支持简体中文与英文双语，需要 iOS 17.0 或更高版本。" } }
+      ]
     }
     </script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <a class="skip-link" href="#main" data-i18n="skip">跳到主要内容</a>
+
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <div class="nav-brand">
-                <img src="images/logo.png" alt="Dailymatters Logo" class="logo" width="1024" height="1024">
-                <span>Dailymatters</span>
+            <a class="nav-brand" href="#" aria-label="Dailymatters">
+                <span class="brand-icon" aria-hidden="true">
+                    <svg viewBox="0 0 100 100" width="34" height="34"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#007AFF"/><stop offset="1" stop-color="#5856D6"/></linearGradient></defs><rect width="100" height="100" rx="24" fill="url(#bg)"/><rect x="24" y="28" width="52" height="48" rx="10" fill="none" stroke="#fff" stroke-width="5"/><path d="M24 43 H76 M38 21 V33 M62 21 V33" stroke="#fff" stroke-width="5" stroke-linecap="round"/><rect x="43" y="52" width="14" height="14" rx="4" fill="#fff"/></svg>
+                </span>
+                <span class="brand-name">Dailymatters</span>
+            </a>
+            <div class="nav-menu">
+                <a href="#how" class="nav-link" data-i18n="navHow">使用流程</a>
+                <a href="#features" class="nav-link" data-i18n="navFeatures">功能特色</a>
+                <a href="#screenshots" class="nav-link" data-i18n="navScreenshots">应用截图</a>
+                <a href="#faq" class="nav-link" data-i18n="navFaq">常见问题</a>
+                <button class="icon-btn" type="button" id="themeToggle" aria-label="切换深色模式">
+                    <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+                    <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+                </button>
+                <button class="lang-switch" type="button" id="langSwitch" aria-label="Switch language">EN</button>
+                <a href="https://apps.apple.com/app/id6749191628" class="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener noreferrer" data-i18n="navGet">获取 App</a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#features">功能特色</a></li>
-                <li><a href="#screenshots">应用截图</a></li>
-                <li><a href="https://apps.apple.com/app/id6749191628" target="_blank" rel="noopener noreferrer">下载</a></li>
-                <li><a href="#support">支持</a></li>
-            </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <main id="main">
     <section class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>智能日程管理<br>让每一天都充满意义</h1>
-                <p class="hero-subtitle">配备 AI 助手的智能日程管理应用，帮你高效规划时间，珍藏每个重要时刻</p>
+                <span class="eyebrow" data-i18n="heroEyebrow">✦ AI 助手 · 智能日程管理</span>
+                <h1 class="hero-title" data-i18n="heroTitle">让每一天都充满意义</h1>
+                <p class="hero-subtitle" data-i18n="heroSubtitle">记录事件、生日与截止日，AI 助手帮你规划每一天，倒计时和提醒让你不错过任何重要时刻。</p>
                 <div class="hero-buttons">
                     <a href="https://apps.apple.com/app/id6749191628" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                        <img src="images/app-store-badge.svg" alt="Download on App Store" width="120" height="40">
+                        <svg class="apple-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        <span class="download-label" data-i18n="downloadBtn">App Store 下载</span>
                     </a>
+                    <a href="#how" class="btn btn-secondary" data-i18n="learnMore">了解更多</a>
                 </div>
-                <div class="hero-features">
-                    <span>✓ 智能AI助手</span>
-                    <span>✓ 灵活提醒</span>
-                    <span>✓ 隐私安全</span>
-                </div>
+                <ul class="hero-trust">
+                    <li data-i18n="trust1">🤖 AI 智能助手</li>
+                    <li data-i18n="trust2">🔔 灵活提醒</li>
+                    <li data-i18n="trust3">🔒 隐私安全</li>
+                </ul>
             </div>
-            <div class="hero-image">
-                <img src="images/hero-mockup.png" alt="Dailymatters app preview" width="1290" height="2796">
+            <div class="hero-visual">
+                <div class="device" role="img" aria-label="Dailymatters 倒计时事件列表">
+                    <div class="device-notch" aria-hidden="true"></div>
+                    <div class="cd">
+                        <div class="cd-head">
+                            <span class="cd-title">Dailymatters</span>
+                            <span class="cd-sub" data-i18n="heroDeviceSub">即将到来 · 4</span>
+                        </div>
+                        <div class="cd-list">
+                            <div class="cd-item d1">
+                                <div class="cd-main">
+                                    <span class="cd-name" data-i18n="dTitle1">妈妈生日</span>
+                                    <span class="cd-meta"><span class="tag tag-birthday" data-i18n="dTag1">生日</span><span data-i18n="dDate1">6月20日</span></span>
+                                </div>
+                                <div class="cd-days"><span class="cd-num">3</span><span class="cd-unit" data-i18n="dUnit">天后</span></div>
+                            </div>
+                            <div class="cd-item d2">
+                                <div class="cd-main">
+                                    <span class="cd-name" data-i18n="dTitle2">项目截止</span>
+                                    <span class="cd-meta"><span class="tag tag-work" data-i18n="dTag2">工作</span><span data-i18n="dDate2">6月22日</span></span>
+                                </div>
+                                <div class="cd-days"><span class="cd-num">5</span><span class="cd-unit" data-i18n="dUnit">天后</span></div>
+                            </div>
+                            <div class="cd-item d3">
+                                <div class="cd-main">
+                                    <span class="cd-name" data-i18n="dTitle3">每月账单日</span>
+                                    <span class="cd-meta"><span class="tag tag-bill" data-i18n="dTag3">账单</span><span data-i18n="dDate3">6月29日</span></span>
+                                </div>
+                                <div class="cd-days"><span class="cd-num">12</span><span class="cd-unit" data-i18n="dUnit">天后</span></div>
+                            </div>
+                            <div class="cd-item d4">
+                                <div class="cd-main">
+                                    <span class="cd-name" data-i18n="dTitle4">结婚纪念日</span>
+                                    <span class="cd-meta"><span class="tag tag-anniv" data-i18n="dTag4">纪念</span><span data-i18n="dDate4">7月15日</span></span>
+                                </div>
+                                <div class="cd-days"><span class="cd-num">28</span><span class="cd-unit" data-i18n="dUnit">天后</span></div>
+                            </div>
+                        </div>
+                        <div class="cd-foot" data-i18n="cdFoot">🔔 3 个提醒已设置</div>
+                    </div>
+                </div>
+                <div class="hero-chip chip-a">🎉 <span class="chip-cd-label" data-i18n="chipCdLabel">距元旦</span> <strong class="chip-cd-num" id="liveCountdown">--</strong></div>
+                <div class="hero-chip chip-b" data-i18n="chipB">🔔 提醒已开</div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
+    <section class="proof" aria-label="trust">
+        <div class="container proof-row">
+            <div class="proof-rating">
+                <div class="stars" aria-hidden="true">★★★★★</div>
+                <div class="proof-sub"><strong>App Store</strong><span data-i18n="proofRating">效率工具 · 日程管理</span></div>
+            </div>
+            <div class="proof-stats">
+                <div class="stat"><strong>iOS 17+</strong><span data-i18n="stat1">原生体验</span></div>
+                <div class="stat"><strong>100%</strong><span data-i18n="stat2">本地存储</span></div>
+                <div class="stat"><strong>EN / 中文</strong><span data-i18n="stat3">双语界面</span></div>
+                <div class="stat"><strong>0</strong><span data-i18n="stat4">广告 · 追踪</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how" class="how">
+        <div class="container">
+            <h2 class="section-title" data-i18n="howTitle">三步不再错过重要时刻</h2>
+            <p class="section-sub" data-i18n="howSub">添加、规划、提醒，其余交给 Dailymatters。</p>
+            <div class="steps">
+                <div class="step reveal">
+                    <div class="step-badge">1</div>
+                    <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9h18M8 2.5v4M16 2.5v4M12 12v4M10 14h4"/></svg></div>
+                    <h3 data-i18n="step1Title">添加事件与截止日</h3>
+                    <p data-i18n="step1Desc">记录生日、账单、截止日或纪念日，设定分类、标签与重复规则。</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-badge">2</div>
+                    <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.1 4.4 4.9.6-3.6 3.3 1 4.8L12 15.9 7.6 16.4l1-4.8L5 8.3l4.9-.6z"/></svg></div>
+                    <h3 data-i18n="step2Title">AI 助手规划你的一天</h3>
+                    <p data-i18n="step2Desc">基于你的真实日程，AI 助手给出个性化的时间安排与建议。</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-badge">3</div>
+                    <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></div>
+                    <h3 data-i18n="step3Title">提醒与小组件不错过</h3>
+                    <p data-i18n="step3Desc">灵活提醒准时提醒你，桌面小组件随时查看倒计时与今日安排。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="features" class="features">
         <div class="container">
-            <h2>强大功能，简单易用</h2>
+            <h2 class="section-title" data-i18n="featuresTitle">强大功能，简单易用</h2>
+            <p class="section-sub" data-i18n="featuresSub">为专注和掌控感而设计的每一个细节。</p>
             <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🤖</div>
-                    <h3>AI 智能助手</h3>
-                    <p>基于你的实际日程数据，提供个性化的时间管理建议和智能分析</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="13" rx="4"/><path d="M9 2.5v3M15 2.5v3M9.5 11h.01M14.5 11h.01M9 15h6"/><path d="M2 12h2M20 12h2"/></svg></div>
+                    <h3 data-i18n="feature1Title">AI 智能助手</h3>
+                    <p data-i18n="feature1Desc">基于你的实际日程数据，提供个性化的时间管理建议和智能分析。</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📅</div>
-                    <h3>灵活日程管理</h3>
-                    <p>支持多种重复模式，轻松管理各类事件，倒计时和已过天数一目了然</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 1.6M9 2h6M18.5 5.5l1.5 1.5"/></svg></div>
+                    <h3 data-i18n="feature2Title">倒计时与重复</h3>
+                    <p data-i18n="feature2Desc">支持多种重复模式，倒计时和已过天数一目了然，重要日子从不遗漏。</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔔</div>
-                    <h3>智能提醒系统</h3>
-                    <p>多种提醒方式，自定义提醒时间，确保不错过任何重要时刻</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></div>
+                    <h3 data-i18n="feature3Title">智能提醒系统</h3>
+                    <p data-i18n="feature3Desc">多种提醒方式，自定义提醒时间，确保不错过任何重要时刻。</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>精美小组件</h3>
-                    <p>在主屏幕即可查看今日安排和重要倒计时，随时掌握日程动态</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10 18.5h4"/></svg></div>
+                    <h3 data-i18n="feature4Title">精美小组件</h3>
+                    <p data-i18n="feature4Desc">在主屏幕即可查看今日安排和重要倒计时，随时掌握日程动态。</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🏷️</div>
-                    <h3>分类与标签</h3>
-                    <p>丰富的分类系统和自定义标签，让事件管理井井有条</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 12.6 12 21.2a2 2 0 0 1-2.8 0L3 15V6a2 2 0 0 1 2-2h6l9.6 8.6z"/><circle cx="8.5" cy="8.5" r="1.5"/></svg></div>
+                    <h3 data-i18n="feature5Title">分类与标签</h3>
+                    <p data-i18n="feature5Desc">丰富的分类系统和自定义标签，让事件管理井井有条。</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>隐私优先</h3>
-                    <p>所有数据存储在本地设备，无需担心隐私泄露，安全可靠</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l7 3v5c0 4.4-3 8.3-7 9.5-4-1.2-7-5.1-7-9.5v-5z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                    <h3 data-i18n="feature6Title">隐私优先</h3>
+                    <p data-i18n="feature6Desc">所有数据存储在本地设备，无需担心隐私泄露，安全可靠。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Screenshots Section -->
     <section id="screenshots" class="screenshots">
         <div class="container">
-            <h2>界面预览</h2>
-            <div class="screenshots-slider">
-                <div class="screenshot">
-                    <img src="images/screenshot-1.png" alt="Dailymatters 主界面" width="1290" height="2796" loading="lazy">
-                    <p>简洁优雅的主界面</p>
+            <h2 class="section-title" data-i18n="screenshotsTitle">界面预览</h2>
+            <p class="section-sub" data-i18n="screenshotsSub">左右滑动，点击可放大查看。</p>
+            <div class="gallery">
+                <button class="gal-arrow prev" type="button" aria-label="上一张" id="galPrev">‹</button>
+                <div class="gal-track" id="galTrack">
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="images/screenshot-1.png" alt="Dailymatters 主界面，事件倒计时列表" width="1290" height="2796" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot1">倒计时一目了然</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="images/screenshot-3.png" alt="Dailymatters 新建事件与提醒界面" width="1290" height="2796" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot2">轻松创建事件与提醒</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="images/screenshot-4.png" alt="Dailymatters 日历视图与本月概览" width="1290" height="2796" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot3">日历视图与本月概览</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="images/screenshot-2.png" alt="Dailymatters 设置界面，分类主题与数据管理" width="1290" height="2796" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot4">分类、主题与数据管理</figcaption>
+                    </figure>
                 </div>
-                <div class="screenshot">
-                    <img src="images/screenshot-2.png" alt="Dailymatters 添加事件界面" width="1290" height="2796" loading="lazy">
-                    <p>便捷的事件创建</p>
-                </div>
-                <div class="screenshot">
-                    <img src="images/screenshot-3.png" alt="Dailymatters AI助手界面" width="1290" height="2796" loading="lazy">
-                    <p>智能AI对话助手</p>
-                </div>
-                <div class="screenshot">
-                    <img src="images/screenshot-4.png" alt="Dailymatters 小组件界面" width="1290" height="2796" loading="lazy">
-                    <p>实用的桌面小组件</p>
-                </div>
+                <button class="gal-arrow next" type="button" aria-label="下一张" id="galNext">›</button>
             </div>
+            <div class="gal-dots" id="galDots" aria-hidden="true"></div>
         </div>
     </section>
 
-    <!-- Use Cases -->
-    <section class="use-cases">
+    <section class="privacy">
+        <div class="container privacy-card">
+            <div class="privacy-lead">
+                <h2 data-i18n="privacyTitle">你的日程，只属于你</h2>
+                <p data-i18n="privacyDesc">数据全部保存在设备本地，采用 SwiftData 管理，卸载即彻底清除，无需账号。</p>
+            </div>
+            <ul class="privacy-points">
+                <li><span aria-hidden="true">📱</span><span data-i18n="pp1">数据本地存储</span></li>
+                <li><span aria-hidden="true">👤</span><span data-i18n="pp2">无需注册账号</span></li>
+                <li><span aria-hidden="true">🚫</span><span data-i18n="pp3">无任何追踪</span></li>
+                <li><span aria-hidden="true">🎯</span><span data-i18n="pp4">无广告干扰</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
         <div class="container">
-            <h2>适用场景</h2>
-            <div class="use-cases-grid">
-                <div class="use-case">
-                    <h3>🎂 生日纪念</h3>
-                    <p>记录亲朋好友的生日，提前收到提醒，不再错过重要的祝福时刻</p>
-                </div>
-                <div class="use-case">
-                    <h3>💼 工作管理</h3>
-                    <p>安排会议、截止日期和项目里程碑，让工作更有条理</p>
-                </div>
-                <div class="use-case">
-                    <h3>📚 学习计划</h3>
-                    <p>制定学习目标，追踪进度，AI助手帮你优化学习时间</p>
-                </div>
-                <div class="use-case">
-                    <h3>✈️ 旅行安排</h3>
-                    <p>规划行程，设置提醒，享受完美的旅行体验</p>
-                </div>
+            <h2 class="section-title" data-i18n="faqTitle">常见问题</h2>
+            <div class="faq-list">
+                <details class="faq-item reveal"><summary data-i18n="q1">Dailymatters 是免费的吗？</summary><p data-i18n="a1">是的，Dailymatters 可在 App Store 免费下载使用。</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q2">可以设置重复事件吗？</summary><p data-i18n="a2">可以。支持每日、每周、每月、每年等多种重复模式，非常适合生日、账单和日常打卡。</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q3">支持哪些提醒方式？</summary><p data-i18n="a3">每个事件都可添加多个自定义提醒，支持当天提醒和提前提醒，确保重要时刻不错过。</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q4">我的数据安全吗？</summary><p data-i18n="a4">所有事件数据都保存在设备本地，无需账号。使用 AI 助手时需要你自行配置 API 密钥，对话通过加密连接发送，我们不会存储你的密钥或对话记录。</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q5">有桌面小组件吗？</summary><p data-i18n="a5">有。你可以把 Dailymatters 小组件添加到主屏幕，随时查看今日安排与重要倒计时。</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q6">支持哪些语言和系统版本？</summary><p data-i18n="a6">支持简体中文与英文双语，需要 iOS 17.0 或更高版本。</p></details>
             </div>
         </div>
     </section>
 
-    <!-- Download Section -->
     <section id="download" class="download">
         <div class="container">
-            <h2>立即下载体验</h2>
-            <p>让 Dailymatters 成为你的智能时间管家</p>
-            <a href="https://apps.apple.com/app/id6749191628" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
-                <img src="images/app-store-badge.svg" alt="Download on App Store" width="120" height="40">
-            </a>
-            <div class="qr-download">
-                <p class="qr-text">或扫描二维码下载</p>
-                <img src="images/qr-code.png" alt="Dailymatters download QR code" class="qr-code" width="300" height="300" loading="lazy">
-            </div>
-            <p class="download-note">支持 iOS 17.0 及以上版本</p>
-        </div>
-    </section>
-
-    <!-- Support Section -->
-    <section id="support" class="support">
-        <div class="container">
-            <h2>需要帮助？</h2>
-            <div class="support-links">
-                <a href="privacy.html" class="support-link">隐私政策</a>
-                <a href="terms.html" class="support-link">使用条款</a>
-                <a href="mailto:1597498880weiproduct@gmail.com" class="support-link">联系我们</a>
-                <a href="https://github.com/WeiProduct/dailymatters-support" class="support-link">技术支持</a>
+            <div class="download-content">
+                <h2 data-i18n="downloadTitle">立即下载 Dailymatters</h2>
+                <p data-i18n="downloadSubtitle">让 Dailymatters 成为你的智能时间管家。</p>
+                <div class="download-buttons">
+                    <a href="https://apps.apple.com/app/id6749191628" class="app-store-badge" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
+                        <img src="images/app-store-badge.svg" alt="Download on the App Store" width="120" height="40" loading="lazy">
+                    </a>
+                </div>
+                <p class="download-note" data-i18n="downloadNote">支持 iOS 17.0 及以上版本</p>
             </div>
         </div>
     </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 WeiProduct. All rights reserved.</p>
-            <p>Built for calmer time management</p>
+            <div class="footer-links">
+                <a href="privacy.html" data-i18n="footerPrivacy">隐私政策</a>
+                <a href="terms.html" data-i18n="footerTerms">使用条款</a>
+                <a href="https://github.com/WeiProduct/dailymatters-support" target="_blank" rel="noopener noreferrer" data-i18n="footerSupport">技术支持</a>
+                <a href="mailto:1597498880weiproduct@gmail.com" data-i18n="footerContact">联系我们</a>
+            </div>
+            <div class="footer-content">
+                <p>&copy; <span id="currentYear">2026</span> <span data-i18n="footerRights">Dailymatters. 保留所有权利。</span></p>
+                <p data-i18n="footerMadeBy">Built by WeiProduct</p>
+                <p>Contact: <a href="mailto:1597498880weiproduct@gmail.com">1597498880weiproduct@gmail.com</a></p>
+            </div>
         </div>
     </footer>
+
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-app">
+            <span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 100 100" width="30" height="30"><rect width="100" height="100" rx="24" fill="url(#bg)"/><rect x="24" y="28" width="52" height="48" rx="10" fill="none" stroke="#fff" stroke-width="5"/><path d="M24 43 H76 M38 21 V33 M62 21 V33" stroke="#fff" stroke-width="5" stroke-linecap="round"/><rect x="43" y="52" width="14" height="14" rx="4" fill="#fff"/></svg></span>
+            <div class="sticky-txt"><strong>Dailymatters</strong><span data-i18n="stickySub">倒计时 · 提醒 · 免费</span></div>
+        </div>
+        <a href="https://apps.apple.com/app/id6749191628" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" data-i18n="stickyGet">获取</a>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
