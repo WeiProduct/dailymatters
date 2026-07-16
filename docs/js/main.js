@@ -43,7 +43,32 @@ const I18N = {
     downloadTitle: '立即下载 Dailymatters', downloadSubtitle: '让 Dailymatters 成为你的智能时间管家。', downloadNote: '支持 iOS 17.0 及以上版本',
     footerPrivacy: '隐私政策', footerTerms: '使用条款', footerSupport: '技术支持', footerContact: '联系我们',
     footerRights: 'Dailymatters. 保留所有权利。', footerMadeBy: 'Built by WeiProduct',
-    stickySub: '倒计时 · 提醒 · 免费', stickyGet: '获取'
+    stickySub: '倒计时 · 提醒 · 免费', stickyGet: '获取',
+    howEyebrow: '使用流程', featuresEyebrow: '功能特色', screenshotsEyebrow: '应用截图',
+    privacyEyebrow: '隐私承诺', faqEyebrow: 'FAQ',
+    tryEyebrow: '互动体验', tryTitle: '算一算你的日子', trySub: '选一个对你重要的日期，立刻看到 Dailymatters 式的倒计时。',
+    tryLabel: '选择一个日期',
+    tryChip1: '我的生日', tryChip2: '考试日', tryChip3: '旅行', tryChip4: '元旦',
+    tryTag1: '生日', tryTag2: '工作', tryTag3: '旅行', tryTag4: '节日',
+    tryNameCustom: '所选日期', tryTagCustom: '日子',
+    tryUnitFuture: '天后', tryUnitPast: '天前', tryUnitToday: '就是今天',
+    tryRingLabel: '今年已悄悄过去', tryCaption: '这就是 Dailymatters 每天为你做的事——再配上提醒和小组件。',
+    personasEyebrow: '适合谁', personasTitle: '四种人的重要日子', personasSub: '不同的生活，同样值得被记住。',
+    persona1Title: '家庭守护者', persona1Desc: '爸妈生日、结婚纪念日一个不落，提前几天就开始准备。', persona1Tag: '生日 · 6月20日',
+    persona2Title: '学生党', persona2Desc: '考试与申请截止日，天天倒数，心里有底。', persona2Tag: '截止日 · 还有21天',
+    persona3Title: '效率工作者', persona3Desc: 'AI 助手围绕真实截止日，帮你规划出高效的一天。', persona3Tag: 'AI · 今日计划',
+    persona4Title: '账单管理者', persona4Desc: '月度账单与续费自动重复，到期前准时提醒。', persona4Tag: '账单 · 每月重复',
+    methodEyebrow: '提醒机制', methodTitle: '一个日子，多重守护',
+    methodDesc1: '在 Dailymatters 里，重要的日子不会只响一次铃。同一事件可以设置多个自定义提醒——提前一周、提前一天、当天准时，一路陪你走到那一天。',
+    methodDesc2: '配合主屏幕小组件，倒计时始终在视线之内；日子过去之后，已过天数还会继续为你记录。',
+    methodToday: '今天', methodEvent: '🎂 妈妈生日', methodBell1: '提前7天', methodBell2: '提前1天', methodBell3: '当天',
+    compareEyebrow: '横向对比', compareTitle: '为什么不用便签或日历？', compareSub: '同样是记日子，体验并不一样。',
+    compareColFeature: '对比项', compareCol1: '便签与记性', compareCol2: '系统日历',
+    compareRow1: '倒计时 / 已过天数视图', compareRow2: '生日、账单按年/月重复', compareRow3: '同一事件多个自定义提醒',
+    compareRow4: 'AI 基于真实日程规划一天', compareRow5: '主屏幕倒计时小组件', compareRow6: '100% 本地存储，无需账号',
+    compareNote: '基于 Dailymatters 应用内功能的定性对比。',
+    mkYes: '支持', mkNo: '不支持', mkPart: '部分支持',
+    footerColProduct: '产品', footerColLegal: '法律条款', footerColSupport: '支持', footerColPrefs: '偏好设置'
   },
   'en': {
     skip: 'Skip to content',
@@ -88,7 +113,32 @@ const I18N = {
     downloadTitle: 'Download Dailymatters Now', downloadSubtitle: 'Let Dailymatters be your smart time keeper.', downloadNote: 'Requires iOS 17.0 or later',
     footerPrivacy: 'Privacy Policy', footerTerms: 'Terms of Use', footerSupport: 'Support', footerContact: 'Contact',
     footerRights: 'Dailymatters. All rights reserved.', footerMadeBy: 'Built by WeiProduct',
-    stickySub: 'Countdowns · Reminders · Free', stickyGet: 'Get'
+    stickySub: 'Countdowns · Reminders · Free', stickyGet: 'Get',
+    howEyebrow: 'How it works', featuresEyebrow: 'Features', screenshotsEyebrow: 'Gallery',
+    privacyEyebrow: 'Privacy', faqEyebrow: 'FAQ',
+    tryEyebrow: 'Try it now', tryTitle: 'Count your own day', trySub: 'Pick a date that matters to you and see a Dailymatters-style countdown instantly.',
+    tryLabel: 'Pick a date',
+    tryChip1: 'My birthday', tryChip2: 'Exam day', tryChip3: 'Trip', tryChip4: 'New Year',
+    tryTag1: 'Birthday', tryTag2: 'Work', tryTag3: 'Trip', tryTag4: 'Holiday',
+    tryNameCustom: 'Your date', tryTagCustom: 'Date',
+    tryUnitFuture: 'days to go', tryUnitPast: 'days since', tryUnitToday: 'is today',
+    tryRingLabel: 'of this year already gone', tryCaption: 'This is exactly what Dailymatters does — now imagine it with reminders and widgets.',
+    personasEyebrow: "Who it's for", personasTitle: 'Four kinds of important days', personasSub: 'Different lives, dates equally worth remembering.',
+    persona1Title: 'The family keeper', persona1Desc: "Never miss Mom's birthday or the anniversary again — start preparing days ahead.", persona1Tag: 'Birthday · Jun 20',
+    persona2Title: 'The student', persona2Desc: 'Exams and application deadlines, counted down daily.', persona2Tag: 'Deadline · 21 days left',
+    persona3Title: 'The busy professional', persona3Desc: 'The AI assistant plans the day around real deadlines.', persona3Tag: "AI · Today's plan",
+    persona4Title: 'The bill wrangler', persona4Desc: 'Monthly bills and renewals on repeat, reminded right on time.', persona4Tag: 'Bill · Monthly',
+    methodEyebrow: 'Reminders', methodTitle: 'One date, many nudges',
+    methodDesc1: 'In Dailymatters an important date never rings just once. Each event can carry multiple custom reminders — a week ahead, a day ahead, and right on the day — walking with you all the way there.',
+    methodDesc2: 'With home-screen widgets the countdown stays in sight, and once the day has passed, days-since keeps the record going.',
+    methodToday: 'Today', methodEvent: "🎂 Mom's Birthday", methodBell1: '7 days before', methodBell2: '1 day before', methodBell3: 'Day of',
+    compareEyebrow: 'Why Dailymatters', compareTitle: 'Why not sticky notes or a calendar?', compareSub: 'Tracking dates is not the same as living them.',
+    compareColFeature: 'Compared on', compareCol1: 'Sticky notes & memory', compareCol2: 'System calendar',
+    compareRow1: 'Days-until / days-since view', compareRow2: 'Yearly & monthly recurrence for birthdays and bills', compareRow3: 'Multiple custom reminders per event',
+    compareRow4: 'AI day-planning from your real schedule', compareRow5: 'Home-screen countdown widgets', compareRow6: '100% on-device, no account',
+    compareNote: "A qualitative comparison based on Dailymatters' in-app features.",
+    mkYes: 'Supported', mkNo: 'Not supported', mkPart: 'Partial',
+    footerColProduct: 'Product', footerColLegal: 'Legal', footerColSupport: 'Support', footerColPrefs: 'Preferences'
   }
 };
 
@@ -104,7 +154,10 @@ function applyLang(lang) {
   document.documentElement.lang = currentLang;
   const ls = document.getElementById('langSwitch');
   if (ls) ls.textContent = currentLang === 'zh-CN' ? 'EN' : '中文';
+  const fls = document.getElementById('footerLangSwitch');
+  if (fls) fls.textContent = currentLang === 'zh-CN' ? 'EN' : '中文';
   try { localStorage.setItem('lang', currentLang); } catch (e) {}
+  renderTryResult();
 }
 
 function initLang() {
@@ -145,6 +198,96 @@ function initCountdown() {
   };
   tick();
   setInterval(tick, 1000);
+}
+
+// ===== Try-it countdown calculator =====
+const TRY_PRESETS = {
+  birthday: { nameKey: 'tryChip1', tagKey: 'tryTag1', tagClass: 'tag-birthday', offset: 45 },
+  exam:     { nameKey: 'tryChip2', tagKey: 'tryTag2', tagClass: 'tag-work',     offset: 21 },
+  trip:     { nameKey: 'tryChip3', tagKey: 'tryTag3', tagClass: 'tag-bill',     offset: 10 },
+  newyear:  { nameKey: 'tryChip4', tagKey: 'tryTag4', tagClass: 'tag-anniv',    offset: null }
+};
+const tryState = { date: null, preset: 'newyear' };
+
+function tryPresetDate(key) {
+  const now = new Date();
+  if (key === 'newyear') return new Date(now.getFullYear() + 1, 0, 1);
+  return new Date(now.getFullYear(), now.getMonth(), now.getDate() + TRY_PRESETS[key].offset);
+}
+
+function renderTryResult() {
+  const nameEl = document.getElementById('tryName');
+  if (!nameEl) return;
+  const t = I18N[currentLang];
+  const p = tryState.preset ? TRY_PRESETS[tryState.preset] : null;
+  const date = tryState.date || (p ? tryPresetDate(tryState.preset) : null);
+  if (!date) return;
+
+  const tagEl = document.getElementById('tryTag');
+  const dateEl = document.getElementById('tryDateLabel');
+  const numEl = document.getElementById('tryNum');
+  const unitEl = document.getElementById('tryUnit');
+
+  nameEl.textContent = p ? t[p.nameKey] : t.tryNameCustom;
+  tagEl.textContent = p ? t[p.tagKey] : t.tryTagCustom;
+  tagEl.className = 'tag ' + (p ? p.tagClass : 'tag-anniv');
+  dateEl.textContent = date.toLocaleDateString(currentLang === 'zh-CN' ? 'zh-CN' : 'en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  const target = new Date(date); target.setHours(0, 0, 0, 0);
+  const diff = Math.round((target - today) / 86400000);
+  if (diff === 0) { numEl.textContent = '🎉'; unitEl.textContent = t.tryUnitToday; }
+  else if (diff > 0) { numEl.textContent = String(diff); unitEl.textContent = t.tryUnitFuture; }
+  else { numEl.textContent = String(-diff); unitEl.textContent = t.tryUnitPast; }
+
+  // Year-progress ring
+  const now = new Date();
+  const yStart = new Date(now.getFullYear(), 0, 1);
+  const yEnd = new Date(now.getFullYear() + 1, 0, 1);
+  const pct = Math.min(1, Math.max(0, (now - yStart) / (yEnd - yStart)));
+  const pctEl = document.getElementById('tryRingPct');
+  if (pctEl) pctEl.textContent = Math.round(pct * 100) + '%';
+  const ring = document.getElementById('tryRingFg');
+  if (ring) {
+    const c = 2 * Math.PI * 36;
+    ring.style.strokeDashoffset = String(c * (1 - pct));
+  }
+}
+
+function initTryIt() {
+  const input = document.getElementById('tryDate');
+  const chips = document.querySelectorAll('#tryChips .try-chip');
+  if (!input || !chips.length) return;
+
+  const toValue = d => {
+    const pad = n => String(n).padStart(2, '0');
+    return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+  };
+  const setActive = key => chips.forEach(c => c.classList.toggle('active', c.getAttribute('data-preset') === key));
+
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      const key = chip.getAttribute('data-preset');
+      tryState.preset = key;
+      tryState.date = null;
+      input.value = toValue(tryPresetDate(key));
+      setActive(key);
+      renderTryResult();
+    });
+  });
+
+  input.addEventListener('change', () => {
+    if (!input.value) return;
+    const d = new Date(input.value + 'T00:00:00');
+    if (isNaN(d)) return;
+    tryState.date = d;
+    tryState.preset = null;
+    setActive(null);
+    renderTryResult();
+  });
+
+  input.value = toValue(tryPresetDate('newyear'));
+  renderTryResult();
 }
 
 // ===== Gallery =====
@@ -219,10 +362,15 @@ function initReveal() {
 function initScroll() {
   const nav = document.getElementById('navbar');
   const sticky = document.getElementById('stickyCta');
+  const prog = document.getElementById('scrollProgress');
   const onScroll = () => {
     const y = window.scrollY;
     if (nav) nav.classList.toggle('scrolled', y > 20);
     if (sticky) sticky.classList.toggle('show', y > 620);
+    if (prog) {
+      const dh = document.documentElement.scrollHeight - window.innerHeight;
+      prog.style.width = (dh > 0 ? (y / dh) * 100 : 0) + '%';
+    }
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
@@ -233,6 +381,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initLang();
   initCountdown();
+  initTryIt();
   initGallery();
   initReveal();
   initScroll();
@@ -244,6 +393,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (ls) ls.addEventListener('click', () => applyLang(currentLang === 'zh-CN' ? 'en' : 'zh-CN'));
   const tt = document.getElementById('themeToggle');
   if (tt) tt.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
+  const fls = document.getElementById('footerLangSwitch');
+  if (fls) fls.addEventListener('click', () => applyLang(currentLang === 'zh-CN' ? 'en' : 'zh-CN'));
+  const ftt = document.getElementById('footerThemeToggle');
+  if (ftt) ftt.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
 
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', function (e) {

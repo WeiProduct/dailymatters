@@ -83,6 +83,7 @@
             </div>
         </div>
     </nav>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
     <main id="main">
     <section class="hero">
@@ -169,6 +170,7 @@
 
     <section id="how" class="how">
         <div class="container">
+            <span class="eyebrow section-eyebrow" data-i18n="howEyebrow">使用流程</span>
             <h2 class="section-title" data-i18n="howTitle">三步不再错过重要时刻</h2>
             <p class="section-sub" data-i18n="howSub">添加、规划、提醒，其余交给 Dailymatters。</p>
             <div class="steps">
@@ -194,8 +196,50 @@
         </div>
     </section>
 
+    <section id="try" class="try">
+        <div class="container">
+            <span class="eyebrow section-eyebrow" data-i18n="tryEyebrow">互动体验</span>
+            <h2 class="section-title" data-i18n="tryTitle">算一算你的日子</h2>
+            <p class="section-sub" data-i18n="trySub">选一个对你重要的日期，立刻看到 Dailymatters 式的倒计时。</p>
+            <div class="try-card reveal">
+                <div class="try-controls">
+                    <label class="try-label" for="tryDate" data-i18n="tryLabel">选择一个日期</label>
+                    <input type="date" id="tryDate" class="try-date">
+                    <div class="try-chips" id="tryChips">
+                        <button type="button" class="try-chip" data-preset="birthday" data-i18n="tryChip1">我的生日</button>
+                        <button type="button" class="try-chip" data-preset="exam" data-i18n="tryChip2">考试日</button>
+                        <button type="button" class="try-chip" data-preset="trip" data-i18n="tryChip3">旅行</button>
+                        <button type="button" class="try-chip active" data-preset="newyear" data-i18n="tryChip4">元旦</button>
+                    </div>
+                </div>
+                <div class="try-result">
+                    <div class="cd-item try-item">
+                        <div class="cd-main">
+                            <span class="cd-name" id="tryName">元旦</span>
+                            <span class="cd-meta"><span class="tag tag-anniv" id="tryTag">节日</span><span id="tryDateLabel">--</span></span>
+                        </div>
+                        <div class="cd-days"><span class="cd-num" id="tryNum">--</span><span class="cd-unit" id="tryUnit">天后</span></div>
+                    </div>
+                    <div class="try-ring-wrap">
+                        <svg class="try-ring" viewBox="0 0 84 84" width="84" height="84" aria-hidden="true">
+                            <defs><linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#007AFF"/><stop offset="1" stop-color="#5856D6"/></linearGradient></defs>
+                            <circle class="ring-bg" cx="42" cy="42" r="36" fill="none" stroke-width="8"/>
+                            <circle class="ring-fg" id="tryRingFg" cx="42" cy="42" r="36" fill="none" stroke="url(#ringGrad)" stroke-width="8" stroke-linecap="round" stroke-dasharray="226.19" stroke-dashoffset="226.19"/>
+                        </svg>
+                        <div class="try-ring-txt">
+                            <span class="try-ring-pct" id="tryRingPct">--%</span>
+                            <span class="try-ring-lb" data-i18n="tryRingLabel">今年已悄悄过去</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="try-caption" data-i18n="tryCaption">这就是 Dailymatters 每天为你做的事——再配上提醒和小组件。</p>
+            </div>
+        </div>
+    </section>
+
     <section id="features" class="features">
         <div class="container">
+            <span class="eyebrow section-eyebrow" data-i18n="featuresEyebrow">功能特色</span>
             <h2 class="section-title" data-i18n="featuresTitle">强大功能，简单易用</h2>
             <p class="section-sub" data-i18n="featuresSub">为专注和掌控感而设计的每一个细节。</p>
             <div class="features-grid">
@@ -233,8 +277,43 @@
         </div>
     </section>
 
+    <section class="personas">
+        <div class="container">
+            <span class="eyebrow section-eyebrow" data-i18n="personasEyebrow">适合谁</span>
+            <h2 class="section-title" data-i18n="personasTitle">四种人的重要日子</h2>
+            <p class="section-sub" data-i18n="personasSub">不同的生活，同样值得被记住。</p>
+            <div class="personas-grid">
+                <div class="persona-card reveal">
+                    <div class="persona-avatar" aria-hidden="true">👨‍👩‍👧</div>
+                    <h3 data-i18n="persona1Title">家庭守护者</h3>
+                    <p data-i18n="persona1Desc">爸妈生日、结婚纪念日一个不落，提前几天就开始准备。</p>
+                    <span class="tag tag-birthday persona-pill" data-i18n="persona1Tag">生日 · 6月20日</span>
+                </div>
+                <div class="persona-card reveal">
+                    <div class="persona-avatar" aria-hidden="true">🎓</div>
+                    <h3 data-i18n="persona2Title">学生党</h3>
+                    <p data-i18n="persona2Desc">考试与申请截止日，天天倒数，心里有底。</p>
+                    <span class="tag tag-work persona-pill" data-i18n="persona2Tag">截止日 · 还有21天</span>
+                </div>
+                <div class="persona-card reveal">
+                    <div class="persona-avatar" aria-hidden="true">💼</div>
+                    <h3 data-i18n="persona3Title">效率工作者</h3>
+                    <p data-i18n="persona3Desc">AI 助手围绕真实截止日，帮你规划出高效的一天。</p>
+                    <span class="tag tag-anniv persona-pill" data-i18n="persona3Tag">AI · 今日计划</span>
+                </div>
+                <div class="persona-card reveal">
+                    <div class="persona-avatar" aria-hidden="true">🧾</div>
+                    <h3 data-i18n="persona4Title">账单管理者</h3>
+                    <p data-i18n="persona4Desc">月度账单与续费自动重复，到期前准时提醒。</p>
+                    <span class="tag tag-bill persona-pill" data-i18n="persona4Tag">账单 · 每月重复</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="screenshots" class="screenshots">
         <div class="container">
+            <span class="eyebrow section-eyebrow" data-i18n="screenshotsEyebrow">应用截图</span>
             <h2 class="section-title" data-i18n="screenshotsTitle">界面预览</h2>
             <p class="section-sub" data-i18n="screenshotsSub">左右滑动，点击可放大查看。</p>
             <div class="gallery">
@@ -263,9 +342,30 @@
         </div>
     </section>
 
+    <section class="method">
+        <div class="container method-grid">
+            <div class="method-copy reveal">
+                <span class="eyebrow section-eyebrow" data-i18n="methodEyebrow">提醒机制</span>
+                <h2 class="section-title method-title" data-i18n="methodTitle">一个日子，多重守护</h2>
+                <p data-i18n="methodDesc1">在 Dailymatters 里，重要的日子不会只响一次铃。同一事件可以设置多个自定义提醒——提前一周、提前一天、当天准时，一路陪你走到那一天。</p>
+                <p data-i18n="methodDesc2">配合主屏幕小组件，倒计时始终在视线之内；日子过去之后，已过天数还会继续为你记录。</p>
+            </div>
+            <div class="method-visual reveal">
+                <div class="tl" aria-hidden="true">
+                    <div class="tl-bell b1" style="left:56%"><span class="tl-bell-dot">🔔</span><span class="tl-bell-lb" data-i18n="methodBell1">提前7天</span></div>
+                    <div class="tl-bell b2" style="left:82%"><span class="tl-bell-dot">🔔</span><span class="tl-bell-lb" data-i18n="methodBell2">提前1天</span></div>
+                    <div class="tl-bell b3" style="left:100%"><span class="tl-bell-dot">🎉</span><span class="tl-bell-lb" data-i18n="methodBell3">当天</span></div>
+                    <div class="tl-track"><div class="tl-fill"></div><span class="tl-point start"></span><span class="tl-point end"></span></div>
+                    <div class="tl-ends"><span class="tl-lb" data-i18n="methodToday">今天</span><span class="tl-lb tl-lb-event" data-i18n="methodEvent">🎂 妈妈生日</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="privacy">
         <div class="container privacy-card">
             <div class="privacy-lead">
+                <span class="eyebrow section-eyebrow" data-i18n="privacyEyebrow">隐私承诺</span>
                 <h2 data-i18n="privacyTitle">你的日程，只属于你</h2>
                 <p data-i18n="privacyDesc">数据全部保存在设备本地，采用 SwiftData 管理，卸载即彻底清除，无需账号。</p>
             </div>
@@ -278,8 +378,68 @@
         </div>
     </section>
 
+    <section class="compare">
+        <div class="container">
+            <span class="eyebrow section-eyebrow" data-i18n="compareEyebrow">横向对比</span>
+            <h2 class="section-title" data-i18n="compareTitle">为什么不用便签或日历？</h2>
+            <p class="section-sub" data-i18n="compareSub">同样是记日子，体验并不一样。</p>
+            <div class="table-scroll reveal">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th scope="col" data-i18n="compareColFeature">对比项</th>
+                            <th scope="col" data-i18n="compareCol1">便签与记性</th>
+                            <th scope="col" data-i18n="compareCol2">系统日历</th>
+                            <th scope="col" class="compare-us">Dailymatters</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" data-i18n="compareRow1">倒计时 / 已过天数视图</th>
+                            <td><span class="mk mk-no"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg><span class="sr-only" data-i18n="mkNo">不支持</span></span></td>
+                            <td><span class="mk mk-no"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg><span class="sr-only" data-i18n="mkNo">不支持</span></span></td>
+                            <td class="compare-us"><span class="mk mk-yes"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11"/></svg><span class="sr-only" data-i18n="mkYes">支持</span></span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="compareRow2">生日、账单按年/月重复</th>
+                            <td><span class="mk mk-no"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg><span class="sr-only" data-i18n="mkNo">不支持</span></span></td>
+                            <td><span class="mk mk-part"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg><span class="sr-only" data-i18n="mkPart">部分支持</span></span></td>
+                            <td class="compare-us"><span class="mk mk-yes"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11"/></svg><span class="sr-only" data-i18n="mkYes">支持</span></span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="compareRow3">同一事件多个自定义提醒</th>
+                            <td><span class="mk mk-no"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg><span class="sr-only" data-i18n="mkNo">不支持</span></span></td>
+                            <td><span class="mk mk-part"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg><span class="sr-only" data-i18n="mkPart">部分支持</span></span></td>
+                            <td class="compare-us"><span class="mk mk-yes"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11"/></svg><span class="sr-only" data-i18n="mkYes">支持</span></span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="compareRow4">AI 基于真实日程规划一天</th>
+                            <td><span class="mk mk-no"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg><span class="sr-only" data-i18n="mkNo">不支持</span></span></td>
+                            <td><span class="mk mk-no"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg><span class="sr-only" data-i18n="mkNo">不支持</span></span></td>
+                            <td class="compare-us"><span class="mk mk-yes"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11"/></svg><span class="sr-only" data-i18n="mkYes">支持</span></span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="compareRow5">主屏幕倒计时小组件</th>
+                            <td><span class="mk mk-no"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg><span class="sr-only" data-i18n="mkNo">不支持</span></span></td>
+                            <td><span class="mk mk-no"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg><span class="sr-only" data-i18n="mkNo">不支持</span></span></td>
+                            <td class="compare-us"><span class="mk mk-yes"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11"/></svg><span class="sr-only" data-i18n="mkYes">支持</span></span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="compareRow6">100% 本地存储，无需账号</th>
+                            <td><span class="mk mk-part"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg><span class="sr-only" data-i18n="mkPart">部分支持</span></span></td>
+                            <td><span class="mk mk-part"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg><span class="sr-only" data-i18n="mkPart">部分支持</span></span></td>
+                            <td class="compare-us"><span class="mk mk-yes"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11"/></svg><span class="sr-only" data-i18n="mkYes">支持</span></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="compare-note" data-i18n="compareNote">基于 Dailymatters 应用内功能的定性对比。</p>
+        </div>
+    </section>
+
     <section id="faq" class="faq">
         <div class="container">
+            <span class="eyebrow section-eyebrow" data-i18n="faqEyebrow">FAQ</span>
             <h2 class="section-title" data-i18n="faqTitle">常见问题</h2>
             <div class="faq-list">
                 <details class="faq-item reveal"><summary data-i18n="q1">Dailymatters 是免费的吗？</summary><p data-i18n="a1">是的，Dailymatters 可在 App Store 免费下载使用。</p></details>
@@ -310,11 +470,34 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-links">
-                <a href="privacy.html" data-i18n="footerPrivacy">隐私政策</a>
-                <a href="terms.html" data-i18n="footerTerms">使用条款</a>
-                <a href="https://github.com/WeiProduct/dailymatters-support" target="_blank" rel="noopener noreferrer" data-i18n="footerSupport">技术支持</a>
-                <a href="mailto:1597498880weiproduct@gmail.com" data-i18n="footerContact">联系我们</a>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-col-title" data-i18n="footerColProduct">产品</div>
+                    <a href="#how" data-i18n="navHow">使用流程</a>
+                    <a href="#features" data-i18n="navFeatures">功能特色</a>
+                    <a href="#screenshots" data-i18n="navScreenshots">应用截图</a>
+                    <a href="#faq" data-i18n="navFaq">常见问题</a>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-title" data-i18n="footerColLegal">法律条款</div>
+                    <a href="privacy.html" data-i18n="footerPrivacy">隐私政策</a>
+                    <a href="terms.html" data-i18n="footerTerms">使用条款</a>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-title" data-i18n="footerColSupport">支持</div>
+                    <a href="https://github.com/WeiProduct/dailymatters-support" target="_blank" rel="noopener noreferrer" data-i18n="footerSupport">技术支持</a>
+                    <a href="mailto:1597498880weiproduct@gmail.com" data-i18n="footerContact">联系我们</a>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-title" data-i18n="footerColPrefs">偏好设置</div>
+                    <div class="footer-prefs">
+                        <button class="icon-btn" type="button" id="footerThemeToggle" aria-label="切换深色模式">
+                            <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+                            <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+                        </button>
+                        <button class="lang-switch" type="button" id="footerLangSwitch" aria-label="Switch language">EN</button>
+                    </div>
+                </div>
             </div>
             <div class="footer-content">
                 <p>&copy; <span id="currentYear">2026</span> <span data-i18n="footerRights">Dailymatters. 保留所有权利。</span></p>
